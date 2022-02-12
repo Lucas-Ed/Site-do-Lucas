@@ -1,12 +1,12 @@
 ---
-author: Dillon
-authorLink: https://dillonzq.com
+author: Lucas Eduardo Rosolem
+authorLink: github.com/Lucas-Ed
 categories:
 - documentation
-date: 2020-03-06T21:40:32+08:00
+date: 2020-03-06T21:40:32.000+08:00
 description: Découvrez en quoi consiste le thème Hugo - LoveIt et les concepts fondamentaux
   qui le sous-tendent.
-lastmod: 2020-03-06T21:40:32+08:00
+lastmod: 2020-03-06T21:40:32.000+08:00
 lightgallery: true
 resources:
 - name: featured-image
