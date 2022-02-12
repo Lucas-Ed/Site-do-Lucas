@@ -3,10 +3,10 @@ author: Lucas Eduardo Rosolem
 authorLink: github.com/Lucas-Ed
 categories:
 - documentation
-date: 2022-02-11T03:00:00+00:00
+date: 2022-02-11T03:00:00.000+00:00
 description: Discover what the Hugo - LoveIt theme is all about and the core-concepts
   behind it.
-lastmod: 2022-02-12T03:00:00+00:00
+lastmod: 2022-02-12T03:00:00.000+00:00
 lightgallery: true
 resources:
 - name: featured-image
