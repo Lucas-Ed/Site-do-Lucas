@@ -3,11 +3,10 @@ author: Dillon
 authorLink: https://dillonzq.com
 categories:
 - documentation
-date: "2020-03-06T21:40:32+08:00"
+date: 2020-03-06T21:40:32+08:00
 description: Découvrez en quoi consiste le thème Hugo - LoveIt et les concepts fondamentaux
   qui le sous-tendent.
-draft: false
-lastmod: "2020-03-06T21:40:32+08:00"
+lastmod: 2020-03-06T21:40:32+08:00
 lightgallery: true
 resources:
 - name: featured-image
@@ -18,9 +17,9 @@ tags:
 title: Thème Documentation - Concepts de Base
 toc:
   auto: false
-weight: 1
----
+weight: "1"
 
+---
 Découvrez en quoi consiste le thème Hugo - **LoveIt** et les concepts fondamentaux qui le sous-tendent.
 
 <!--more-->

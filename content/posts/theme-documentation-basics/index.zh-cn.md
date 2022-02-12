@@ -3,10 +3,9 @@ author: Dillon
 authorLink: https://dillonzq.com
 categories:
 - documentation
-date: "2020-03-06T21:40:32+08:00"
+date: 2020-03-06T21:40:32+08:00
 description: 探索 Hugo - LoveIt 主题的全部内容和背后的核心概念.
-draft: false
-lastmod: "2020-03-06T21:40:32+08:00"
+lastmod: 2020-03-06T21:40:32+08:00
 lightgallery: true
 resources:
 - name: featured-image
@@ -17,9 +16,10 @@ tags:
 title: 主题文档 - 基本概念
 toc:
   auto: false
-weight: 1
----
+weight: "1"
+draft: true
 
+---
 探索 Hugo - **LoveIt** 主题的全部内容和背后的核心概念.
 
 <!--more-->
