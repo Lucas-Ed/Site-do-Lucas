@@ -1,13 +1,12 @@
 ---
-author: Dillon
-authorLink: https://dillonzq.com
+author: Lucas Eduardo Rosolem
+authorLink: github.com/Lucas-Ed
 categories:
 - documentation
-date: "2020-03-06T21:29:01+08:00"
+date: 2022-02-11T03:00:00+00:00
 description: Discover what the Hugo - LoveIt theme is all about and the core-concepts
   behind it.
-draft: false
-lastmod: "2020-03-06T21:29:01+08:00"
+lastmod: 2022-02-12T03:00:00+00:00
 lightgallery: true
 resources:
 - name: featured-image
@@ -18,62 +17,58 @@ tags:
 title: Theme Documentation - Basics
 toc:
   auto: false
-weight: 1
+weight: "1"
+
 ---
+Descubra o que é o tema Hugo - **LoveIt** e os principais conceitos por trás dele.
 
-Discover what the Hugo - **LoveIt** theme is all about and the core-concepts behind it.
+<!--mais-->
 
-<!--more-->
+## 1 Requisitos
 
-## 1 Requirements
+Graças à simplicidade de Hugo, [Hugo](https://gohugo.io/) é a única dependência deste tema.
 
-Thanks to the simplicity of Hugo, [Hugo](https://gohugo.io/) is the only dependency of this theme.
+Basta instalar a versão mais recente do [:(far fa-file-archive fa-fw): Hugo (> 0.62.0)](https://gohugo.io/getting-started/installing/) para o seu sistema operacional ( **Windows** , **Linux** , **macOS** ).
 
-Just install latest version of [:(far fa-file-archive fa-fw): Hugo (> 0.62.0)](https://gohugo.io/getting-started/installing/) for your OS (**Windows**, **Linux**, **macOS**).
+{{< nota de suporte de opções "Por que não oferece anteriores do Hugo?" >>} Como o [Hugodown Render Hooks](https://gohugo.io/getting-started/configuration-markup#markdown-render-hooks) foi criado acima do tema Mark no [Hugo Christmas Edition](https://gohugo.io/news/0.62.0-relnotes/) , suporta apenas versões **de 02.0** . {{< /admonição >}}
 
-{{< admonition note "Why not support earlier versions of Hugo?" >}}
-Since [Markdown Render Hooks](https://gohugo.io/getting-started/configuration-markup#markdown-render-hooks) was introduced in the [Hugo Christmas Edition](https://gohugo.io/news/0.62.0-relnotes/), this theme only supports Hugo versions above **0.62.0**.
-{{< /admonition >}}
+{< recursos dicas são necessários para "A versão do fa-fw Hugo recomendados} Como alguns tema para ser processado:(fa:fa-fw): SCSS para ser processado:(fa:fa-fw): ): CSS versão **do** Hugo para uma melhor experiência. {{< /admonição >}}
 
-{{< admonition tip "Hugo extended version is recommended" >}}
-Since some features of this theme need to processes :(fab fa-sass fa-fw): SCSS to :(fab fa-css3 fa-fw): CSS, it is recommended to use Hugo **extended** version for better experience.
-{{< /admonition >}}
+## 2 Instalação
 
-## 2 Installation
+As etapas a seguir estão aqui para ajudá-lo a inicializar seu site. Se você não conhece Hugo, principalmente, que você aprende a ensinar mais sobre ele, estamos seguindo [ele](https://gohugo.io/getting-started/quick-start/) .
 
-The following steps are here to help you initialize your new website. If you don’t know Hugo at all, we strongly suggest you learn more about it by following this [great documentation for beginners](https://gohugo.io/getting-started/quick-start/).
+### 2.1 Crie seu projeto
 
-### 2.1 Create Your Project
-
-Hugo provides a `new` command to create a new website:
+Hugo fornece um `new`comando para criar um novo site:
 
 ```bash
 hugo new site my_website
 cd my_website
 ```
 
-### 2.2 Install the Theme
+### 2.2 Instale o Tema
 
-The **LoveIt** theme’s repository is: [https://github.com/dillonzq/LoveIt](https://github.com/dillonzq/LoveIt).
+O recurso do tema **LoveIt** é: [https://github.com/dillonzq/LoveIt](https://github.com/dillonzq/LoveIt) .
 
-You can download the [latest release :(far fa-file-archive fa-fw): .zip file](https://github.com/dillonzq/LoveIt/releases) of the theme and extract it in the `themes` directory.
+Você pode baixar a [última versão :(far fa-file-archive fa-fw): arquivo .zip](https://github.com/dillonzq/LoveIt/releases) do tema e extraí-lo no `themes`diretório.
 
-Alternatively, clone this repository to the `themes` directory:
+Como alternativa, clone este governo para o `themes`diretório:
 
 ```bash
 git clone https://github.com/dillonzq/LoveIt.git themes/LoveIt
 ```
 
-Or, create an empty git repository and make this repository a submodule of your site directory:
+Ou grito um recurso git vazio e torne este recurso um submódulo do diretório do seu site:
 
 ```bash
 git init
 git submodule add https://github.com/dillonzq/LoveIt.git themes/LoveIt
 ```
 
-### 2.3 Basic Configuration {#basic-configuration}
+### 2.3 Configuração Básica {#configuração-básica}
 
-The following is a basic configuration for the LoveIt theme:
+O seguinte é uma configuração básica para o tema LoveIt:
 
 ```toml
 baseURL = "http://example.org/"
@@ -127,47 +122,40 @@ theme = "LoveIt"
     noClasses = false
 ```
 
-{{< admonition >}}
-When building the website, you can set a theme by using `--theme` option. However, we suggest you modify the configuration file (**config.toml**) and set the theme as the default.
-{{< /admonition >}}
+{{< admonition >}} Ao construir o site, você pode definir um tema usando uma `--theme`opção. No entanto, sugerimos que você modifique o arquivo de configuração ( **config.toml** ) e defina o tema como padrão. {{< /admonição >}}
 
-### 2.4 Create Your First Post
+### 2.4 Crie sua primeira postagem
 
-Here is the way to create your first post:
+Aqui está a maneira de criar seu primeiro post:
 
 ```bash
 hugo new posts/first_post.md
 ```
 
-Feel free to edit the post file by adding some sample content and replacing the title value in the beginning of the file.
+Sinta-se à vontade para editar o arquivo de postagem adicionando conteúdo de amostra e valor do título no início do arquivo.
 
-{{< admonition >}}
-By default all posts and pages are created as a draft. If you want to render these pages, remove the property `draft: true` from the metadata, set the property `draft: false` or add `-D`/`--buildDrafts` parameter to `hugo` command.
-{{< /admonition >}}
+{{< admonition >}} Por padrão, todas as postagens e páginas são criadas como rascunho. Se você deseja renderizar essas páginas, remova a propriedade `draft: true`dos metadados, defina a propriedade `draft: false`ou adicione `-D`/ `--buildDrafts`parâmetro ao `hugo`comando. {{< /admonição >}}
 
-### 2.5 Launching the Website Locally
+### 2.5 Lançando o site localmente
 
-Launch by using the following command:
+Inicie usando o seguinte comando:
 
 ```bash
 hugo serve
 ```
 
-Go to `http://localhost:1313`.
+Vá para `http://localhost:1313`.
 
 ![Basic configuration preview](basic-configuration-preview.png "Basic configuration preview")
 
-{{< admonition tip >}}
-When you run `hugo serve`, when the contents of the files change, the page automatically refreshes with the changes.
-{{< /admonition >}}
+{{< admonition tip >}} When you run `hugo serve`, when the contents of the files change, the page automatically refreshes with the changes. {{< /admonition >}}
 
-{{< admonition >}}
-Since the theme use `.Scratch` in Hugo to implement some features,
-it is highly recommended that you add `--disableFastRender` parameter to `hugo server` command for the live preview of the page you are editing.
+{{< admonition >}} Since the theme use `.Scratch` in Hugo to implement some features, it is highly recommended that you add `--disableFastRender` parameter to `hugo server` command for the live preview of the page you are editing.
 
 ```bash
 hugo serve --disableFastRender
 ```
+
 {{< /admonition >}}
 
 ### 2.6 Build the Website
@@ -180,10 +168,7 @@ hugo
 
 A `public` folder will be generated, containing all static content and assets for your website. It can now be deployed on any web server.
 
-{{< admonition tip >}}
-The website can be automatically published and hosted with [Netlify](https://www.netlify.com/) (Read more about [Automated HUGO deployments with Netlify](https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/)).
-Alternatively, you can use [AWS Amplify](https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/), [Github pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/), [Render](https://gohugo.io/hosting-and-deployment/hosting-on-render/) and more...
-{{< /admonition >}}
+{{< admonition tip >}} The website can be automatically published and hosted with [Netlify](https://www.netlify.com/) (Read more about [Automated HUGO deployments with Netlify](https://www.netlify.com/blog/2015/07/30/hosting-hugo-on-netlifyinsanely-fast-deploys/)). Alternatively, you can use [AWS Amplify](https://gohugo.io/hosting-and-deployment/hosting-on-aws-amplify/), [Github pages](https://gohugo.io/hosting-and-deployment/hosting-on-github/), [Render](https://gohugo.io/hosting-and-deployment/hosting-on-render/) and more... {{< /admonition >}}
 
 ## 3 Configuration
 
@@ -725,35 +710,26 @@ Please open the code block below to view the complete sample configuration :(far
   taxonomyTerm = ["HTML"]
 ```
 
-{{< admonition >}}
-Note that some of these parameters are explained in details in other sections of this documentation.
-{{< /admonition >}}
+{{< admonition >}} Note that some of these parameters are explained in details in other sections of this documentation. {{< /admonition >}}
 
-{{< admonition note "Hugo environments" >}}
-Default environments are `development` with `hugo serve` and `production` with `hugo`.
+{{< admonition note "Hugo environments" >}} Default environments are `development` with `hugo serve` and `production` with `hugo`.
 
-Due to limitations in the local `development` environment,
-the **comment system**, **CDN** and **fingerprint** will not be enabled in the `development` environment.
+Due to limitations in the local `development` environment, the **comment system**, **CDN** and **fingerprint** will not be enabled in the `development` environment.
 
-You could enable these features with `hugo serve -e production`.
-{{< /admonition >}}
+You could enable these features with `hugo serve -e production`. {{< /admonition >}}
 
-{{< admonition tip "Tips about CDN Configuration" >}}
-{{< version 0.2.7 changed >}}
+{{< admonition tip "Tips about CDN Configuration" >}} {{< version 0.2.7 changed >}}
 
 ```toml
 [params.cdn]
   # CDN data file name, disabled by default
   # ("jsdelivr.yml")
   data = ""
-````
+```
 
-The default CDN data file is located in `themes/LoveIt/assets/data/cdn/` directory.
-You can store your own data file in the same path under your project: `assets/data/cdn/`.
-{{< /admonition >}}
+The default CDN data file is located in `themes/LoveIt/assets/data/cdn/` directory. You can store your own data file in the same path under your project: `assets/data/cdn/`. {{< /admonition >}}
 
-{{< admonition tip "Tips about social Configuration" >}}
-{{< version 0.2.0 >}}
+{{< admonition tip "Tips about social Configuration" >}} {{< version 0.2.0 >}}
 
 You can directly set your ID to get a default social link and its icon:
 
@@ -779,9 +755,7 @@ Or You can set more options through a dict:
     title = "Mastodon"
 ```
 
-The default data of all supported social links is located in `themes/LoveIt/assets/data/social.yaml`,
-which is you can refer to.
-{{< /admonition >}}
+The default data of all supported social links is located in `themes/LoveIt/assets/data/social.yaml`, which is you can refer to. {{< /admonition >}}
 
 ![Complete configuration preview](complete-configuration-preview.png "Complete configuration preview")
 
@@ -804,9 +778,7 @@ Customize `browserconfig.xml` and `site.webmanifest` to set theme-color and back
 
 {{< version 0.2.8 changed >}}
 
-{{< admonition >}}
-Hugo **extended** version is necessary for the style customization.
-{{< /admonition >}}
+{{< admonition >}} Hugo **extended** version is necessary for the style customization. {{< /admonition >}}
 
 **LoveIt** theme has been built to be as configurable as possible by defining custom `.scss` style files.
 
@@ -833,21 +805,21 @@ In `assets/css/_custom.scss`, you can add some css style code to customize the s
 
 {{< version 0.2.10 changed >}}
 
-| Language             | Hugo Code | HTML `lang` Attribute | Theme Docs                    | Lunr.js Support               |
-|:-------------------- |:---------:|:---------------------:|:-----------------------------:|:-----------------------------:|
-| English              | `en`      | `en`                  | :(far fa-check-square fa-fw): | :(far fa-check-square fa-fw): |
-| Simplified Chinese   | `zh-cn`   | `zh-CN`               | :(far fa-check-square fa-fw): | :(far fa-check-square fa-fw): |
-| French               | `fr`      | `fr`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Polish               | `pl`      | `pl`                  | :(far fa-square fa-fw):       | :(far fa-square fa-fw):       |
-| Brazilian Portuguese | `pt-br`   | `pt-BR`               | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Italian              | `it`      | `it`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Spanish              | `es`      | `es`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| German               | `de`      | `de`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| German               | `de`      | `de`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Serbian              | `sr`      | `sr`                  | :(far fa-square fa-fw):       | :(far fa-square fa-fw):       |
-| Russian              | `ru`      | `ru`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Romanian             | `ro`      | `ro`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
-| Vietnamese           | `vi`      | `vi`                  | :(far fa-square fa-fw):       | :(far fa-check-square fa-fw): |
+| Language | Hugo Code | HTML lang Attribute | Theme Docs | Lunr.js Support |
+| :--- | :---: | :---: | :---: | :---: |
+| English | en | en | :(far fa-check-square fa-fw): | :(far fa-check-square fa-fw): |
+| Simplified Chinese | zh-cn | zh-CN | :(far fa-check-square fa-fw): | :(far fa-check-square fa-fw): |
+| French | fr | fr | :(far fa-square fa-fw): | :(far fa-check-square fa-fw): |
+| Polish | pl | pl | :(far fa-square fa-fw): | :(far fa-square fa-fw): |
+| Brazilian Portuguese | pt-br | pt-BR | :(far fa-square fa-fw): | :(far fa-check-square fa-fw): |
+| Italian | it | it | :(far fa-square fa-fw): | :(far fa-check-square fa-fw): |
+| Spanish | es | es | :(far fa-square fa-fw): | :(far fa-check-square fa-fw): |
+| German | de | de | :(far fa-square fa-fw): | :(far fa-check-square fa-fw): |
+| German | de | de | :(far fa-square fa-fw): | :(far fa-check-square fa-fw): |
+| Serbian | sr | sr | :(far fa-square fa-fw): | :(far fa-square fa-fw): |
+| Russian | ru | ru | :(far fa-square fa-fw): | :(far fa-check-square fa-fw): |
+| Romanian | ro | ro | :(far fa-square fa-fw): | :(far fa-check-square fa-fw): |
+| Vietnamese | vi | vi | :(far fa-square fa-fw): | :(far fa-check-square fa-fw): |
 
 ### 4.2 Basic Configuration
 
@@ -962,13 +934,9 @@ Single file `my-page.md` is split in three files:
 * in Chinese: `my-page.zh-cn.md`
 * in French: `my-page.fr.md`
 
-{{< admonition >}}
-Be aware that only translated pages are displayed in menu. It’s not replaced with default language content.
-{{< /admonition >}}
+{{< admonition >}} Be aware that only translated pages are displayed in menu. It’s not replaced with default language content. {{< /admonition >}}
 
-{{< admonition tip >}}
-Use [Front Matter parameter](https://gohugo.io/content-management/multilingual#translate-your-content) to translate urls too.
-{{< /admonition >}}
+{{< admonition tip >}} Use [Front Matter parameter](https://gohugo.io/content-management/multilingual#translate-your-content) to translate urls too. {{< /admonition >}}
 
 ### 4.3 Overwrite Translation Strings
 
@@ -1022,21 +990,11 @@ Here is the search configuration in your [site configuration](#site-configuratio
     searchKey = ""
 ```
 
-{{< admonition note "How to choose search engine?" >}}
-The following is a comparison of two search engines:
+{{< admonition note "How to choose search engine?" >}} The following is a comparison of two search engines:
 
-* `lunr`: simple, no need to synchronize `index.json`, no limit for `contentLength`,
-  but high bandwidth and low performance (Especially for Chinese which needs a large segmentit library)
+* `lunr`: simple, no need to synchronize `index.json`, no limit for `contentLength`, but high bandwidth and low performance (Especially for Chinese which needs a large segmentit library)
 * `algolia`: high performance and low bandwidth, but need to synchronize `index.json` and limit for `contentLength`
 
-{{< version 0.2.3 >}} The content of the post is separated by `h2` and `h3` HTML tag to improve query performance and basically implement full-text search.
-`contentLength` is used to limit the max index length of the part starting with `h2` and `h3` HTML tag.
-{{< /admonition >}}
+{{< version 0.2.3 >}} The content of the post is separated by `h2` and `h3` HTML tag to improve query performance and basically implement full-text search. `contentLength` is used to limit the max index length of the part starting with `h2` and `h3` HTML tag. {{< /admonition >}}
 
-{{< admonition tip "Tips about algolia" >}}
-You need to upload `index.json` files to algolia to activate searching.
-You could upload the `index.json` files by browsers but a CLI tool may be better.
-[Algolia Atomic](https://github.com/chrisdmacrae/atomic-algolia) is a good choice.
-To be compatible with Hugo multilingual mode,
-you need to upload different `index.json` for each language to the different index of algolia, such as `zh-cn/index.json` or `fr/index.json`...
-{{< /admonition >}}
+{{< dica de advertência "Dicas sobre algolia" >}} Você precisa fazer upload de `index.json`arquivos para algolia para ativar a pesquisa. Você pode fazer upload dos `index.json`arquivos por navegadores, mas uma ferramenta CLI pode ser melhor. [Algolia Atomic](https://github.com/chrisdmacrae/atomic-algolia) é uma boa escolha. Para ser compatível com o modo multilíngue do Hugo, você precisa fazer upload diferente `index.json`para cada idioma para o índice diferente de algolia, como `zh-cn/index.json`ou `fr/index.json`... {{< /admonition >}}
