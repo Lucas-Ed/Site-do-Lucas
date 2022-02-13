@@ -4,7 +4,6 @@ authorLink = "github.com/Lucas-Ed"
 categories = []
 date = ""
 description = "teste"
-draft = true
 lastmod = ""
 lightgallery = true
 resources = []
